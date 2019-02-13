@@ -25,5 +25,8 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+    
+	compile group: 'org.apache.hadoop', name: 'hadoop-common', version: '2.7.2'
+	compile group: 'org.apache.hadoop', name: 'hadoop-mapreduce-client-core', version: '2.7.2'
 }
 
