@@ -1,4 +1,4 @@
-package sdk.hadoop.mapreduce;
+package sdk.hadoop.mapreduce.wc;
 
 import java.io.IOException;
 import java.util.StringTokenizer;
