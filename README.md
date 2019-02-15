@@ -4,3 +4,6 @@
 
 + 빅데이터 - 하둡, 하이브로 시작하기([바로가기](https://wikidocs.net/book/2203))
 + 빅데이터 - 스칼라, 스파크로 시작하기([바로가기](https://wikidocs.net/book/2350))
+
+# hadoop-mapreduce-example
+하둡 맵리듀스 예제를 등록합니다. 기본적인 워드카운트 에제부터 맵리듀스 API를 활용한 예제를 다루어 보겠습니다. 
