@@ -13,6 +13,17 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
+/**
+ * 워드카운트 
+ * 하둡 맵리듀스 튜토리얼의 워드카운트 예제 소스
+ * 
+ * 맵리듀스 프레임워크의 맵, 리듀스 사용방법을 알아봅니다. 
+ * 
+ * https://hadoop.apache.org/docs/stable/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
+ * 
+ * @author whitebeard-k
+ *
+ */
 public class WordCount {
 
 	// 맵
