@@ -1,4 +1,4 @@
-# 워드카운트
+# 워드카운트(WordCount.java)
 하둡 워드카운트 에제입니다.
 
 ## 매퍼
@@ -37,3 +37,11 @@ Text key, Iterable<IntWritable> values
 		job.setMapperClass(TokenizerMapper.class);
 		job.setReducerClass(IntSumReducer.class);
 ```
+
+# 워드카운트2(WordCount2.java)
+워드카운트2 예제는 문자와 함께 입력된 특수기호를 제거하고 문자만 카운트 하는 예제입니다. 
+
++ 제네릭 옵션 파서의 사용법을 익힌다. 
++ setup 함수를 이용하여 설정값을 이용하는 방벙을 익힌다. 
++ 카운터의 사용방법을 익힌다. 
++ 분산캐쉬의 사용방법을 익힌다. 
