@@ -1,0 +1,8 @@
+# tbl 테이블 통계정보 수집
+ANALYZE TABLE tbl COMPUTE STATISTICS;
+
+# tbl 테이블의 yymmdd가 '2018-01-01'인 파티션의 통계정보 수집 
+ANALYZE TABLE tbl PARTITION(yymmdd='2018-01-01') COMPUTE STATISTICS;
+
+# 칼럼 통계정보 수집 
+ANALYZE TABLE tbl PARTITION(yymmdd='2018-01-01') COMPUTE STATISTICS FOR COLUMNS;
