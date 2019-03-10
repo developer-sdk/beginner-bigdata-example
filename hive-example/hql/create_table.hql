@@ -55,3 +55,12 @@ CREATE TABLE tbl1 (
   col1 STRING 
 ) STORED AS INPUTFORMAT  "com.hadoop.mapred.DeprecatedLzoTextInputFormat"
             OUTPUTFORMAT "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat";
+            
+-- CREATE 문과 동일하게 생성하고 AS 문 다음에 SELECT 문 입력 
+CREATE TABLE new_key_value_store
+   ROW FORMAT SERDE "org.apache.hadoop.hive.serde2.columnar.ColumnarSerDe"
+   STORED AS RCFile
+   AS
+SELECT (key % 1024) new_key, concat(key, value) key_value_pair
+  FROM key_value_store
+  SORT BY new_key, key_value_pair;
