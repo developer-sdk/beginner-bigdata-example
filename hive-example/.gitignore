@@ -1,1 +1,10 @@
+# class file
+*.class
+
+# eclipse file
+.project
+.classpath
+*.prefs
+
+/.gradle/
 /bin/

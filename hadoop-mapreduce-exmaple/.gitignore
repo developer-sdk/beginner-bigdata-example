@@ -1,2 +1,8 @@
+# class file
+*.class
+*.prefs
+/.project
+/.classpath
+
 /.gradle/
 /bin/
