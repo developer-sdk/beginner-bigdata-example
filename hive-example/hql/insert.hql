@@ -52,9 +52,21 @@ SELECT *
   FROM source
 ;
 
+-- TSV 타입 입력 
 INSERT OVERWRITE DIRECTORY 'hdfs://1.0.0.1:8020/user/'
    ROW FORMAT DELIMITED
    FIELDS TERMINATED BY '\t'
 SELECT *
   FROM source
+;
+
+-- CSV 타입 입력, Gzip 압축 
+set hive.exec.compress.output=true;
+set mapred.output.compression.codec=org.apache.hadoop.io.compress.GzipCodec;
+ 
+INSERT OVERWRITE DIRECTORY 'hdfs:///user/tables/'
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+SELECT *
+  FROM table
+ WHERE name = 'csv'
 ;
