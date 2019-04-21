@@ -1,0 +1,62 @@
+<configuration>
+
+    <property>
+        <name>yarn.scheduler.capacity.maximum-applications</name>
+        <value>10000</value>
+    </property>
+
+    <property>
+        <name>yarn.scheduler.capacity.maximum-am-resource-percent</name>
+        <value>0.1</value>
+        <description>
+            애플리케이션 마스터에 할당 가능한 최대 비율.
+        </description>
+    </property>
+
+    <property>
+        <name>yarn.scheduler.capacity.resource-calculator</name>
+        <value>org.apache.hadoop.yarn.util.resource.DefaultResourceCalculator</value>
+    </property>
+
+    <property>
+        <name>yarn.scheduler.capacity.root.queues</name>
+        <value>prd,stg</value>
+        <description>
+            The queues at the this level (root is the root queue).
+        </description>
+    </property>
+
+    <!-- capacity -->
+    <property>
+        <name>yarn.scheduler.capacity.root.prd.capacity</name>
+        <value>80</value>
+    </property>
+
+    <property>
+        <name>yarn.scheduler.capacity.root.stg.capacity</name>
+        <value>20</value>
+    </property>
+
+    <!-- user-limit-factor -->
+    <property>
+        <name>yarn.scheduler.capacity.root.prd.user-limit-factor</name>
+        <value>1</value>
+    </property>
+
+    <property>
+        <name>yarn.scheduler.capacity.root.stg.user-limit-factor</name>
+        <value>2</value>
+    </property>
+
+    <!-- maximum-capacity -->
+    <property>
+        <name>yarn.scheduler.capacity.root.prd.maximum-capacity</name>
+        <value>100</value>
+    </property>
+
+    <property>
+        <name>yarn.scheduler.capacity.root.stg.maximum-capacity</name>
+        <value>30</value>
+    </property>
+
+</configuration>
