@@ -58,5 +58,17 @@
         <name>yarn.scheduler.capacity.root.stg.maximum-capacity</name>
         <value>30</value>
     </property>
+    
+    <!-- maximum-am-resource-percent -->
+	<property>
+        <name>yarn.scheduler.capacity.root.prd.maximum-am-resource-percent</name>
+        <value>0.2</value>
+    </property>
+
+    <property>
+        <name>yarn.scheduler.capacity.root.stg.maximum-am-resource-percent</name>
+        <value>0.3</value>
+    </property>
+    
 
 </configuration>
