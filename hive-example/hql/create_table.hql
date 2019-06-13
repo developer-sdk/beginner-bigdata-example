@@ -64,3 +64,12 @@ CREATE TABLE new_key_value_store
 SELECT (key % 1024) new_key, concat(key, value) key_value_pair
   FROM key_value_store
   SORT BY new_key, key_value_pair;
+  
+-- CREATE 문을 like로 생성 
+CREATE TABLE target_table
+  LIKE source_table;
+
+CREATE EXTERNAL TABLE target_table
+  LIKE source_table
+ LOCATION 'hdfs:///user/';
+ 
