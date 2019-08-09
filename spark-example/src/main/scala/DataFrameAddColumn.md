@@ -1,3 +1,7 @@
+# 칼럼 추가
++ 칼럼 추가와 칼럼의 정보를 변경하는 방법 확인 
+
+```scala
 val df = spark.read.json("/user/people.json")
 scala> df.show()
 +----+-------+
@@ -51,3 +55,4 @@ scala> df.select($"age", $"name", func($"name").as("xx") ).show()
 |  30|   Andy|   Andy|
 |  19| Justin| Justin|
 +----+-------+-------+
+```
